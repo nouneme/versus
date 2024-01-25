@@ -1,0 +1,323 @@
+/* початок оновлення стилів */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* закінчення стилю */
+
+body {
+    font-family: Lato;
+}
+
+.container {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* стилі для header */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: #999;
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 1s;
+
+}
+
+.menu a:hover {
+    color: #00D6B4;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* стилі для банера */
+.banner {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.banner h2 {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+    /* 110.417% */
+    margin-bottom: 29px;
+    max-width: 465px;
+
+}
+
+.banner a {
+    border-radius: 3px;
+    border: 1px solid #00D6B4;
+    color: #00D6B4;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    /* 146.154% */
+    text-transform: uppercase;
+    padding: 10px 26px 10px 26px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.banner a:hover {
+    background-color: #999;
+}
+
+/* стилі для work */
+.works {
+    background: #222;
+    padding: 50px 0 79px;
+}
+
+.works h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 120% */
+    margin-bottom: 33px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.works img {
+    width: calc(100% / 3 - 40px / 3);
+}
+
+.footer {
+    background: #222;
+    padding-top: 35px;
+    padding-bottom: 37px;
+}
+
+.footer h4 {
+    color: #C2C2C2;
+
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 122.222% */
+    text-transform: uppercase;
+}
+
+.footer p {
+    color: #999;
+
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 150% */
+}
+
+
+
+@media(max-width:650px){
+    .works img {
+        width: calc(100% / 2 - 20px / 2);
+    }
+}
+
+@media(max-width:450px) {
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .works img {
+        width: 100%;
+    }
+
+    .banner h2 {
+        font-size: 42px;
+    }
+}
